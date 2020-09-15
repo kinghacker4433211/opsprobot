@@ -18,7 +18,7 @@ const dateFormat = require('dateformat');
 const client = new Discord.Client(); 
 const Canvas = require("canvas"); 
 const prefix = "#"
-const id = JSON.parse(fs.readFileSync("./id/rank.json", "utf8"));
+const id = JSON.parse(fs.readFileSync("./rank.json", "utf8"));
 
 let banse = new Set();
 client.on('guildBanAdd', function(guild) {
@@ -4607,7 +4607,7 @@ if (message.content.startsWith("#deletecolors")) {
 
 
 
-let ar = JSON.parse(fs.readFileSync(`./Data/AutoRole.json`, `utf8`))
+let ar = JSON.parse(fs.readFileSync(`./AutoRole.json`, `utf8`))
 client.on('guildMemberAdd', member => {
 if(!ar[member.guild.id]) ar[member.guild.id] = {
 onoff: 'Off',
