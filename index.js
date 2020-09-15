@@ -361,7 +361,7 @@ message.channel.sendFile(canvas.toBuffer());
 });
 });
 client.on('message', message => {
-  if(message.content.startsWith(`${prefix}invite`)){
+  if(message.content.startsWith(`${prefix}inv`)){
     var embed = new Discord.RichEmbed()
     .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")
     .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=2080374975")
